@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "character_size",
+  "version": "1.0.0",
+  "name": "Character Size",
+  "description": "Change your size and gain enhanced abilities.",
+  "authors": ["Your Name"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/character_size/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["hackage.character_size.Character_size"],
+    "client": ["hackage.character_size.client.Character_sizeClient"]
+  },
+  "mixins": ["character_size.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric": "*",
+    "minecraft": ">=1.21",
+    "java": ">=21"
+  }
+}
